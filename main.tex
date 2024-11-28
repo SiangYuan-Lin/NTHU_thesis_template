@@ -1,0 +1,57 @@
+\documentclass[master]{NTHUthesis}
+
+%%% Customization  %%%
+\usepackage{zhlipsum, lipsum} % dummy text
+\graphicspath{{figures/}} % include images path
+
+%%% Necessary %%%
+\titleZH{中文論文標題}
+\titleEN{Thesis title in english}
+\instituteZH{物理學系物理組}
+\studentID{YYY0225NN}
+\studentZH{中文姓名}
+\studentEN{Name in english}
+\advisorZH{指導教授中文姓名}
+\advisorEN{Advisor name in english}
+\yearZH{114}
+\monthZH{2}
+\yearEN{2025}
+\monthEN{Feburary}
+
+\begin{document}
+
+\makecover
+
+\pagenumbering{Roman}
+
+\input{chapters/Abstract}
+\input{chapters/Acknowledgements}
+
+%%% Necessary %%%
+\maketoc
+
+%%% Optional %%%
+\phantomsection
+\listofalgorithms
+\addcontentsline{toc}{chapter}{List of Algorithms}
+\clearpage
+
+\pagenumbering{arabic}
+
+%%% Main chapters %%%
+\input{chapters/CH1}
+\input{chapters/CH2}
+\input{chapters/CH3}
+\input{chapters/CH4}
+\input{chapters/CH5}
+\input{chapters/CH6}
+\input{chapters/CH7}
+
+%%% Appendices %%%
+\input{chapters/Appendices}
+
+%%% References %%%
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
