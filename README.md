@@ -1,5 +1,5 @@
 # NTHU thesis template  
-## This template should be compiled using the `XeLaTex` compiler
+## This template should be compiled using the `XeLaTeX` compiler
 ## In `NTHUthesis.cls` :  
 When setting up Chinese fonts  
 * Check your system's font catalog to see which fonts are available.  
